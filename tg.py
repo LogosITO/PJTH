@@ -46,8 +46,7 @@ def process_state(user, note):
     if not final:
         for path in paths:
             condition, room, modifier = parse_path(path)
-            if hero.check_required(condition)
-                keyboard.add(types.InlineKeyboardButton(text=room, callback_data=path))
+            keyboard.add(types.InlineKeyboardButton(text=room, callback_data=path))
 
 
     """try:

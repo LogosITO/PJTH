@@ -17,8 +17,10 @@ class Hero:
         return True if correct else False
 
     def check_required(self, string) -> str:
+        '''if string is None:
+            return 'rateT'
         if 'rnd' in string:
-            if random() < string[1:len(string) - 2]:
+            if random() < int(string[1:len(string) - 2]:
                 return 'rndF'
             else:
                 return 'rndF'
@@ -26,13 +28,13 @@ class Hero:
             thing, sign, value = string.split(' ')
             if thing.lower() in ['rate', 'rationality']:
                 correct = eval(str(self.rationality) + sign + value)
-            return 'rateT' if correct else 'rateF'
-
-
+            return 'rateT' if correct else 'rateF'''
+        pass
 
     def perform_modifier(self, modifier) -> NoReturn:
-        if 'rate' in modifier:
-            self.rationality += modifier[1:len(modifier) - 2].split(' ')[1]
+        '''if 'rate' in modifier:
+            self.rationality += modifier[1:len(modifier) - 2].split(' ')[1]'''
+        pass
 
     def get_info(self) -> str:
         str_inv = "Your inventory is " + ' '.join(self.inventory) + '\n'
